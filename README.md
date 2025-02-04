@@ -1,5 +1,7 @@
 # aboutMe
 
+This repository contains a collection of my designs created over the years (at least a few of them worth sharing). It showcases various projects, including electronics, mechanical models, and creative builds. 
+
 ## 2024
 
 ### [HSSmartModule](https://github.com/lukasznowarkiewicz/HSSmartModule)
