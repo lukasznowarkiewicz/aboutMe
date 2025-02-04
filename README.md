@@ -10,7 +10,6 @@
 
 M2SmartHome is an add-on card designed to transform any M.2 2280 Key M-equipped device into a robust smart home hub by integrating onboard eMMC storage, a microSD card reader, WiFi 802.11n (via a Realtek RTL8188), and a Silicon Labs Thread radio. The board leverages a PCIe-to-USB 2.0 bridge (PI7C9X440SLBFDE) with integrated USB2244 controllers to consolidate multiple essential peripherals, addressing the limitations of low-power solutions like the Raspberry Pi. Early testing under Linux on an HP 800 G3 SFF has shown reliable eMMC and microSD performance, although further configuration of the PCIe bridge is needed. Overall, M2SmartHome offers a compact, high-performance platform for advanced smart home automation and storage needs.
 
-#
 
 ### [iPhone13MiniCoolingCase](https://github.com/lukasznowarkiewicz/iPhone13MiniCoolingCase)
 
@@ -33,6 +32,14 @@ iPhone13MiniCoolingCase is a custom-engineered, passively cooled case designed t
 Home Span RGB Control Board is a custom-designed PCB created in KiCad 8 around an ESP32-C6, initially aimed at enabling seamless integration of WS2812B LED strips with Apple HomeKit via HomeSpan firmware. The board features robust power management with a USB-C 15W input, a 3.3V LDO regulator, overcurrent protection via an AP22615 load switch, and a CP2102 USB UART bridge for easy programming, while also incorporating peripherals such as a user button and a TSOP4838 IR receiver for potential extended functionality. Basic hardware testing was carried out using both the Arduino IDE and the ESP-IDF framework, confirming that the board effectively supports fundamental HomeKit-based LED control. Future firmware enhancements—such as adding Thread radio support and expanded hardware features—are planned, marking a solid foundation for ongoing embedded development.
 
 ## 2023
+
+
+### [SOM Module based on Rockchip RK3399](https://github.com/lukasznowarkiewicz/SOM_MODULE)
+
+![](/img/SOM.PNG)
+
+This project, completed as part of a course at Poznań University of Technology, involved designing a SOM module compatible with the FriendlyElec SOM-RK3399. The focus was on advanced high-speed PCB design, including detailed impedance calculations for various trace types and interfacing with RAM, eMMC, and Ethernet. Due to the complexity and costs associated with BGA assembly, the project remained at the conceptual stage, emphasizing the learning of advanced Altium Designer techniques.
+
 
 ### [CocktailMaker](https://github.com/lukasznowarkiewicz/cocktailMaker/tree/main)
 
