@@ -119,4 +119,25 @@ DeafAlDer was conceived to address the need for an accessible, multimodal home a
 
 3dCane was developed to empower visually impaired users by providing an intelligent cane that performs 3D environmental scanning and offers both tactile and audio feedback for safer navigation. The system is built around dual 8-bit AVR microcontrollers (ATmega64 in the cane and ATmega328P in the wristwatch), integrating US-015 ultrasonic sensors, NRF24L01 radio modules, ADXL accelerometers, a DS3231 RTC, and microSD storage, with firmware written in C using Eclipse Indigo. The prototype successfully demonstrated real-time obstacle detection and user alerts through robust testing and custom PCB assembly using both THT and SMT techniques. Although the project showcased promising results in competitive innovation, limitations in sensor data processing, communication range, and unfinished features like illumination highlight areas for further refinement.
 
-## 2005 - 2015
+## 2010 - 2015
+
+### Bluetooth Speaker
+![Bluetooth Speaker](img/bluetooth_speaker.png)
+
+### Wind Turbine Model
+![Wind Turbine Model](img/wind_turbine_model.png)
+
+### Christmas Tree
+![Christmas Tree](img/christmas_tree.png)
+
+### Jacob's Leather
+![Jacob's Leather](img/jacbos_leather.png)
+
+### Light Control Module
+![Light Control Module](img/light_control_module.png)
+
+### Useless Box
+![Useless Box](img/useless_box.png)
+
+### Building Model
+![Building Model](img/building_model.png)
