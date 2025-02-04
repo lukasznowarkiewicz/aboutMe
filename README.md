@@ -4,6 +4,12 @@
 
 ### [HSSmartModule](https://github.com/lukasznowarkiewicz/HSSmartModule)
 
+![](/img/HSSM-top.png)
+
+![](/img/HSSM-bottom.png)
+
+HSSmartModule is a work-in-progress light controller for existing electrical installations, targeting HomeSpan firmware for Apple HomeKit and featuring an ESP32-C6 with wireless connectivity (Wi-Fi 6, Bluetooth 5 LE, Thread, Zigbee). Its dual PCB design includes a low voltage board with the ESP32-C6, U.FL antenna connector, debugging buttons, and status LEDs, while the high voltage board handles power conversion from 230VAC via an LNK3204D non-insulated supply and safely reads high voltage inputs using an LTV-354T. The high voltage board also incorporates a CS5480-INZ power meter with shunt resistors, a TPS560200DBVR DC-DC converter, and relays for output control. A dedicated HSSM programmer based on the CP2102N employs optical isolation (using ADUM3160BRWZ-RL and HLK-1D0505A) to galwanically separate programmed device from the PC. Future development focused on custom firmware to fully leverage features such as power measurement, presence sensing, and Thread radio communication.
+
 ### [M2SmartHome](https://github.com/lukasznowarkiewicz/M2SmartHome)
 
 ![](/img/m2sh-photo.jpeg)
