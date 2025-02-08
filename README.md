@@ -132,7 +132,7 @@ DeafAlDer was conceived to address the need for an accessible, multimodal home a
 ### Christmas Tree
 ![Christmas Tree](img/christmas_tree.png)
 
-### Jacob's Leather
+### Jacob's Ladder
 ![Jacob's Leather](img/jacbos_leather.png)
 
 ### Light Control Module
