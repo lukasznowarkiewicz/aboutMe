@@ -31,7 +31,7 @@ M2SmartHome is an add-on card designed to transform any M.2 2280 Key M-equipped 
 
 iPhone13MiniCoolingCase is a custom-engineered, passively cooled case designed to tackle the overheating issues encountered during high-demand scenarios like continuous navigation, high screen brightness, and multi-tasking in direct sunlight. Using Fusion 360 for thermal simulations and CAD modeling, the project integrates a CNC-machined Aluminum 6061 heatsink—featuring meticulously studied geometric patterns and air channels—with a flexible, 3D-printed TPU casing, all while maintaining a slim profile comparable to commercial cases. Extensive testing revealed significant improvements, reducing the charge-up time from 3:37 to 1:50, marginally boosting Geekbench scores, and eliminating the dreaded "Charging On Hold" notification.&#x20;
 
-### [HSRGB](https://github.com/lukasznowarkiewicz](https://github.com/lukasznowarkiewicz/HSRGB)
+### [HSRGB](https://github.com/lukasznowarkiewicz/HSRGB)
 
 ![](/img/hsrgb-assembled.jpeg)
 
