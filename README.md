@@ -31,7 +31,7 @@ M2SmartHome is an add-on card designed to transform any M.2 2280 Key M-equipped 
 
 iPhone13MiniCoolingCase is a custom-engineered, passively cooled case designed to tackle the overheating issues encountered during high-demand scenarios like continuous navigation, high screen brightness, and multi-tasking in direct sunlight. Using Fusion 360 for thermal simulations and CAD modeling, the project integrates a CNC-machined Aluminum 6061 heatsink—featuring meticulously studied geometric patterns and air channels—with a flexible, 3D-printed TPU casing, all while maintaining a slim profile comparable to commercial cases. Extensive testing revealed significant improvements, reducing the charge-up time from 3:37 to 1:50, marginally boosting Geekbench scores, and eliminating the dreaded "Charging On Hold" notification.&#x20;
 
-### [HSRGB](https://github.com/lukasznowarkiewicz)
+### [HSRGB]([https://github.com/lukasznowarkiewicz](https://github.com/lukasznowarkiewicz/HSRGB))
 
 ![](/img/hsrgb-assembled.jpeg)
 
@@ -49,7 +49,7 @@ Home Span RGB Control Board is a custom-designed PCB created in KiCad 8 around a
 This project, completed as part of a course at Poznań University of Technology, involved designing a SOM module compatible with the FriendlyElec SOM-RK3399. The focus was on advanced high-speed PCB design, including detailed impedance calculations for various trace types and interfacing with RAM, eMMC, and Ethernet. Due to the complexity and costs associated with BGA assembly, the project remained at the conceptual stage, emphasizing the learning of advanced Altium Designer techniques.
 
 
-### [CocktailMaker](https://github.com/lukasznowarkiewicz/cocktailMaker/tree/main)
+### [CocktailMaker](https://github.com/lukasznowarkiewicz/cocktailMaker)
 
 ![](/img/img_7755.jpeg)
 
@@ -75,8 +75,6 @@ teaMachine was conceived as an academic project to create a modular, automated t
 
 ![](/img/render1.png)
 
-\### PlantGrowingContainers
-
 PlantGrowingContainers was initiated as a research platform to study the impact of electromagnetic fields on plant growth by comparing controlled and experimental samples in two remotely managed, automated boxes. The system is built around an ESP32 microcontroller that gathers environmental data from sensors measuring temperature, humidity, light intensity, magnetic forces, and atmospheric pressure, while an 8-relay module controls actuators like fans, LED strips, and a peristaltic pump for irrigation. The hardware design features a robust power supply that steps down from 230VAC to 12VDC and 5VDC, and the mechanical framework is meticulously crafted in Fusion 360 using V-slot aluminum profiles, plywood enclosures, and custom 3D-printed components. Additionally, an ESP32 camera module paired with a local server and [Filka.io](http://Filka.io) integration enables continuous image capture and real-time data visualization to support comprehensive research analysis.
 
 ## 2021
@@ -97,7 +95,7 @@ Emersense was an attempt to develop a system for alerting drivers about approach
 
 ## 2018 - 2019
 
-### [Appliance connector]()
+### [Appliance connector](https://github.com/lukasznowarkiewicz/ApplianceConnector)
 
 ![](/img/casing_like_droplet.png)
 
@@ -115,7 +113,7 @@ DeafAlDer was conceived to address the need for an accessible, multimodal home a
 
 ## 2016
 
-### [3dCane]()
+### [3dCane](https://github.com/lukasznowarkiewicz/3dCane)
 
 ![](/img/cane_in_the_field.jpg)
 
