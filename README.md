@@ -1,6 +1,6 @@
 # aboutMe
 
-This repository contains a collection of my designs created over the years (at least a few of them worth sharing). It showcases various projects, including electronics, mechanical models, and creative builds. 
+This repository contains a collection of my designs created over the years - at least a few of them worth, or possible to share. 
 
 ## 2024
 
@@ -10,14 +10,13 @@ This repository contains a collection of my designs created over the years (at l
 
 ![](/img/HSSM-bottom.png)
 
-HSSmartModule is a work-in-progress light controller for existing electrical installations, targeting HomeSpan firmware for Apple HomeKit and featuring an ESP32-C6 with wireless connectivity (Wi-Fi 6, Bluetooth 5 LE, Thread, Zigbee). Its dual PCB design includes a low voltage board with the ESP32-C6, U.FL antenna connector, debugging buttons, and status LEDs, while the high voltage board handles power conversion from 230VAC via an LNK3204D non-insulated supply and safely reads high voltage inputs using an LTV-354T. The high voltage board also incorporates a CS5480-INZ power meter with shunt resistors, a TPS560200DBVR DC-DC converter, and relays for output control. A dedicated HSSM programmer based on the CP2102N employs optical isolation (using ADUM3160BRWZ-RL and HLK-1D0505A) to galwanically separate programmed device from the PC. Future development focused on custom firmware to fully leverage features such as power measurement, presence sensing, and Thread radio communication.
+HSSmartModule is a light controller for existing electrical installations, aka smart relay module. It is intended to be inserted behind existing light switch in a flush-mounted box. Iniitially designed for [Home Span](https://github.com/HomeSpan/HomeSpan) software, which later on could be replaced with custom app enabling thread functionality. Device is divided into 2 rigid PCBs, which are connected with flexible circuit board to minimalise the overall size of the device. Low voltage PCB includes ESP32-C6 (featuring Wi-Fi 6, Bluetooth 5 LE, Thread, Zigbee radio), SPI flash memory, U.FL antenna connector, status LEDs and user button (for factory defaults). High voltage PCB is designed for power conversion from 230VAC to 12VDC via an LNK3204D non-insulated supply, reads control signals from external switches, control 2 outputs, measure power draw using CS5480-INZ power meter and shunt resistors. Additionally designed custom insulated programmer based on CP2102N. 
 
 ### [M2SmartHome](https://github.com/lukasznowarkiewicz/M2SmartHome)
 
 ![](/img/m2sh-photo.jpeg)
 
-M2SmartHome is an add-on card designed to transform any M.2 2280 Key M-equipped device into a robust smart home hub by integrating onboard eMMC storage, a microSD card reader, WiFi 802.11n (via a Realtek RTL8188), and a Silicon Labs Thread radio. The board leverages a PCIe-to-USB 2.0 bridge (PI7C9X440SLBFDE) with integrated USB2244 controllers to consolidate multiple essential peripherals, addressing the limitations of low-power solutions like the Raspberry Pi. Early testing under Linux on an HP 800 G3 SFF has shown reliable eMMC and microSD performance, although further configuration of the PCIe bridge is needed. Overall, M2SmartHome offers a compact, high-performance platform for advanced smart home automation and storage needs.
-
+M2SmartHome is an add-on card designed to transform any M.2 2280 Key M-equipped device into a smart home gateway. The main goal is to allow booting the operating system (for ex. home assistant) from flash storage, store configurations or backups on removable medium like uSD card, connect wirelessly to home wifi and control smart home devices via thread or zigbee radio. It is done by PCIe to USB bridge, to which are conencted all remaining peripherals. For OS installation medium choosen eMMC mmeory with USB2244 controller. For storing configuration uSD card reader with also USB2244 controller. For WiFi connectivity is responsible chip from Realtek RTL8188 with U.FL connector for external antenna. Thread or zigbee functionality is done by chip from Silicon Labs communicating with PC through CP2102N USB-Uart bridge. 
 
 ### [iPhone13MiniCoolingCase](https://github.com/lukasznowarkiewicz/iPhone13MiniCoolingCase)
 
@@ -29,7 +28,7 @@ M2SmartHome is an add-on card designed to transform any M.2 2280 Key M-equipped 
 
 
 
-iPhone13MiniCoolingCase is a custom-engineered, passively cooled case designed to tackle the overheating issues encountered during high-demand scenarios like continuous navigation, high screen brightness, and multi-tasking in direct sunlight. Using Fusion 360 for thermal simulations and CAD modeling, the project integrates a CNC-machined Aluminum 6061 heatsink—featuring meticulously studied geometric patterns and air channels—with a flexible, 3D-printed TPU casing, all while maintaining a slim profile comparable to commercial cases. Extensive testing revealed significant improvements, reducing the charge-up time from 3:37 to 1:50, marginally boosting Geekbench scores, and eliminating the dreaded "Charging On Hold" notification.&#x20;
+iPhone13MiniCoolingCase is a custom-engineered, passively cooled case designed to tackle the overheating issues encountered during high-demand scenarios like continuous navigation, high screen brightness, and multi-tasking in direct sunlight. Using Fusion 360 for thermal simulations and CAD modeling, the project integrates a CNC-machined Aluminum 6061 heatsink—featuring meticulously studied geometric patterns and air channels—with a flexible, 3D-printed TPU casing. Extensive testing revealed significant improvements, reducing the charge-up time from 3:37 to 1:50, marginally boosting Geekbench scores, and eliminating the dreaded "Charging On Hold" notification.
 
 ### [HSRGB](https://github.com/lukasznowarkiewicz/HSRGB)
 
@@ -37,7 +36,7 @@ iPhone13MiniCoolingCase is a custom-engineered, passively cooled case designed t
 
 
 
-Home Span RGB Control Board is a custom-designed PCB created in KiCad 8 around an ESP32-C6, initially aimed at enabling seamless integration of WS2812B LED strips with Apple HomeKit via HomeSpan firmware. The board features robust power management with a USB-C 15W input, a 3.3V LDO regulator, overcurrent protection via an AP22615 load switch, and a CP2102 USB UART bridge for easy programming, while also incorporating peripherals such as a user button and a TSOP4838 IR receiver for potential extended functionality. Basic hardware testing was carried out using both the Arduino IDE and the ESP-IDF framework, confirming that the board effectively supports fundamental HomeKit-based LED control. Future firmware enhancements—such as adding Thread radio support and expanded hardware features—are planned, marking a solid foundation for ongoing embedded development.
+Home Span RGB Control Board is a custom-designed PCB with an ESP32-C6, initially aimed at enabling seamless integration of WS2812B LED strips with Apple HomeKit via [HomeSpan firmware](https://github.com/HomeSpan/HomeSpan). The board features robust power management with a USB-C 15W input, a 3.3V LDO regulator, overcurrent protection via an AP22615 load switch, and a CP2102 USB UART bridge for easy programming, while also incorporating peripherals such as a user button and a TSOP4838 IR receiver for potential extended functionality. 
 
 ## 2023
 
@@ -53,13 +52,11 @@ This project, completed as part of a course at Poznań University of Technology,
 
 ![](/img/img_7755.jpeg)
 
-cocktailMaker was built purely for fun—a prototype designed for a New Year's Eve party rather than as a commercial or groundbreaking innovation. The project evolved from an earlier engineering thesis, integrating a Raspberry Pi Zero 2 running Debian with a 7-inch touchscreen for the user interface and a Raspberry Pi Pico managing an 8-channel relay module for peristaltic pumps. The UI was developed in Python using customTkinter, while low-level control on the Pi Zero was handled in C. With a mechanical structure designed in Fusion 360 and assembled using extruded V-slot 2020 profiles, 3D-printed parts, and milky plexiglass panels, the cocktailMaker performed reliably for an 8-hour stretch, making it a fun and successful experiment for the event.
+cocktailMaker was built purely for fun—a prototype designed for a New Year's Eve party. The project evolved from an earlier engineering thesis, integrating a Raspberry Pi Zero 2 running Debian with a 7-inch touchscreen for the user interface and a Raspberry Pi Pico managing an 8-channel relay module for peristaltic pumps. The UI was developed in Python using customTkinter, while low-level control on the Pi Zero was handled in C. With a mechanical structure designed in Fusion 360 and assembled using extruded V-slot 2020 profiles, 3D-printed parts, and milky plexiglass panels, the cocktailMaker performed reliably for an 8-hour stretch, making it a fun and successful experiment for the event.
 
 
 
 ### [TeaMachine](https://github.com/lukasznowarkiewicz/teaMachine)
-
-
 
 ![](/img/teamachineassembly_rev_10_front.png)
 
@@ -67,7 +64,7 @@ cocktailMaker was built purely for fun—a prototype designed for a New Year's E
 
 ![](/img/ekspres2.png)
 
-teaMachine was conceived as an academic project to create a modular, automated tea maker that integrates mechanical design, embedded hardware, and multi-platform software to streamline tea preparation much like modern coffee machines. The project leverages a custom Raspberry Pi Pico control board (designed in KiCad) running C++ firmware, with control interfaces developed across platforms—from Windows 10 IoT Core (.NET Core) and Debian (Vue + Vite) to Python with customTKinter—all housed within a robust mechanical structure built from 2020 aluminum profiles, copolycarbonate panels, and 3D-printed components designed in Fusion 360. It employs both high-voltage SSRs and low-voltage mechanical relays to manage components such as heaters, pumps, and motors, while integrating various sensors and user interfaces for comprehensive system control. Ultimately, teaMachine served as an extensive academic project that successfully demonstrated cross-disciplinary integration and iterative development, providing valuable insights into mechatronics, embedded systems, and software engineering.
+teaMachine was conceived as an academic project to create a modular, automated tea maker that integrates mechanical design, embedded hardware, embedded software to streamline tea preparation much like modern coffee machines. The project leverages a custom Raspberry Pi Pico control board (designed in KiCad) running C firmware, with control interfaces developed across platforms—from Windows 10 IoT Core (.NET Core) and Debian (Vue + Vite) to Python with customTKinter. Everything housed within a robust mechanical structure built from 2020 aluminum profiles, polycarbonate panels, and 3D-printed components designed in Fusion 360. It employs both high-voltage SSRs and low-voltage mechanical relays to manage components such as heaters, pumps, and motors, while integrating various sensors and user interfaces for comprehensive system control. Ultimately, teaMachine served as an extensive academic project that successfully demonstrated cross-disciplinary integration and iterative development, providing valuable insights into mechatronics, embedded systems, and software engineering.
 
 ## 2022
 
